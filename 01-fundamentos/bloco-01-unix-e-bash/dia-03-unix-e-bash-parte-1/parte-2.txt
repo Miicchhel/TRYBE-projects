@@ -1,1 +1,61 @@
 PARTE II - MANIPULAÇÃO E BUSCA
+
+1. baixar arquivo na pasta unix_tests
+	
+	curl -o countries.txt "https://gist.githubusercontent.com/kalinchernev/486393efcca01623b18d/raw/daa24c9fea66afb7d68f8d69f0c4b8eeb9406e83/countries"
+
+2. mostrar todo conteúdo de countries.txt
+
+	cat countries.txt
+
+3. mostrar, pág por pág, conteúdo de countries.txt até Zambia
+	
+	less countries.txt
+
+4. mostrar, pág por pág, conteúdo de countries.txt utilizando um comando para buscar por Zambia
+	
+	less countries.txt
+	/Zambia
+	
+5. Buscar Brazil em countries.txt
+	
+	grep 'Brazil' countries.txt
+
+6. Buscar Brazil em countries.txt usando lower case.
+	
+	grep -i 'brazil' countries.txt
+
+[criando arquivo phrases.txt para os próximos exercícios]
+
+7. buscar pelavras que não contenham 'fox' em phrases.txt
+	
+	grep -v 'fox' phrases.txt
+
+8. contar nº de palavras em phrases.txt
+	
+	wc -w phrases.txt
+
+9. contar nº de linhas em phrases.txt
+
+	wc -l phrases.txt
+
+10. criar empty.tbt e empty.pdf
+	
+	touch empty.tbt
+	touch empty.pdf
+
+11. listar todos arquivos de unix_tests
+	
+	ls -l
+
+12. listar todos arquivos terminados em txt
+	
+	ls -l *.txt
+
+13. listar todos arquivos terminados em tbt ou txt
+	
+	ls -l *t?t ou ls -l *.tbt *.txt
+
+14. Acessar manual do comando ls.
+	
+	man ls

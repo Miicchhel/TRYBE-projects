@@ -1,1 +1,69 @@
 PARTE I - CRIAÇÃO DE ARQUIVOS E DIRETÓRIOS
+
+1. criar diretório unix_tests e entrar nele
+	
+	mkdir unix_tests
+	cd unix_tests
+
+2. criar arquivo de texto: trybe.txt
+	
+	touch trybe.txt
+
+3. criar cópia do trybe.txt com nome trybe_backup.txt
+	
+	cp trybe.txt trybe_backup.txt
+
+4. renomear arquivo trybe.txt
+	
+	mv trybe.txt TRYBE.txt
+
+5. criar diretório backup dentro de unix_testes
+
+	mkdir backup
+
+6. mover trybe_backup.txt para o diretório backup
+	
+	mv trybe_backup.txt backup
+
+7. criar diretório backup2 dentro de unix_testes
+	
+	mkdir backup2
+
+8. mover trybe_backup.txt para backup2
+	
+	mv ./backup/trybe_backup.txt ./backup2
+
+9. apagar o diretório backup
+	
+	rmdir backup
+
+10. renomear o diretório backup2 para backup
+	
+	rm backup2 backup
+
+11. ver path completo do diretório atual e listar seus arquivos
+
+	pwd
+	ls -l
+
+12. apagar o diretório backup
+	
+	rm -rf backup
+
+13. lipar terminal
+	
+	clear / reset / ctrl+l
+
+[arquivo skills.txt foi criado para os exercícios 14 e 15]
+
+14. mostrar as 5 primeiras skills de skills.txt
+	
+	head -5 skills.txt
+
+15. mostrar as 4 últimas skills de skills.txt
+	
+	tail -4 skills.txt
+
+16. apagar todos arquivos .txt 
+	
+	rm ./*.txt

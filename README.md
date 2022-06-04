@@ -8,6 +8,6 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 
 ## Fundamentos do Desenvolvimento Web :construction_worker_man: :construction:
 **bloco 01:** Unix & Bash
-- [ ] 1-3: Unix & Bash - Part 1
-- [ ] 1-4: Unix & Bash - Part 2
-- [ ] 1-5: Shell Script 
+- [ ] 3-1: Unix & Bash - Part 1
+- [ ] 3-2: Unix & Bash - Part 2
+- [ ] 4: Shell Script 

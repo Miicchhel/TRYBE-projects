@@ -1,1 +1,63 @@
 PARTE I - COMANDOS DE INPUT E OUTPUT
+
+1. navegar até unix_tests.
+	
+	/home/michel/Documentos/TRYBE/unix-shell/unix_tests
+
+2. criar skills2.txt pelo terminal e adicionar em cada linha: Internet, Unix E Bash.
+	
+	touch skills2.txt				cat > skills2.txt               touch skills2.txt
+	cat >> skills2.txt				Internet                        echo "Internet" >> skills2.txt
+	Internet			    ou		Unix                    ou      echo "Unix" >> skills2.txt
+	Unix						    Bash                            echo "Bash" >> skills2.txt
+	Bash
+
+3. adicionar mais 5 itens à lista e imprimir lista ordenada.
+	
+	cat >> skills2.txt
+	Git
+	HTML
+	CSS
+	JavaScript
+	React
+	
+	sort < skills2.txt
+
+4. contar nº de linhas de skills2.txt.
+
+	wc -l skills2.txt       ou      cat skills2.txt | wc -l      
+
+5. criar top_skill.txt contendo as 3 primeiras skills de skills2.txt, em ordem alfabética.
+
+	head -3 skills2.txt | sort > top_skills.txt
+
+6. criar e adicionar algumas frases pelo terminal em phrases2.txt.
+
+	cat > phrases2.txt
+	(frases...)
+	
+7. contar nº de linhas que contêm as letras 'br'.
+	
+	grep br phrases2.txt | wc -l
+
+8. contar nº de linhas que não contêm as letras 'br'.
+
+	grep -v br phrases2.txt | wc -l
+	
+9. adicionar dois países ao final do phrases2.txt.
+
+	cat >> phrases2.txt
+	Brasil
+	Argentina
+	
+10 Crie um novo arquivo chamado bunch_of_things.txt com os conteúdos dos arquivos phrases2.txt e countries.txt
+	
+	cat ../parteII/countries.txt phrases2.txt > bunch_of_things.txt
+	
+11. Ordene o arquivo bunch_of_things.txt.
+
+	cat < bunch_of_things.txt | sort > bunch_of_things_Ordem.txt
+
+                            ou
+    
+    sort bunch_of_things.txt -o bunch_of_things.txt

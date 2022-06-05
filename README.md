@@ -11,3 +11,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 - [x] 3-1: Unix & Bash - Part 1
 - [x] 3-2: Unix & Bash - Part 2
 - [x] 4: Shell Script 
+
+**Bloco 02:** Git, GitHub e Internet
+- [x] 1: Git & GitHub - O que é e para que serve
+- [x] 2: Git & GitHub - Entendendo os comandos
+- [] 3: Internet - Entendendo como ela funciona

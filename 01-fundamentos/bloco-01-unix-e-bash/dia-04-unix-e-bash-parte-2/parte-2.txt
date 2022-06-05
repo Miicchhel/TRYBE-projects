@@ -1,1 +1,33 @@
 PARTE II - PERMISSÕES
+
+1. navegar até unix_tests;
+	
+	cd home/michel/Documentos/TRYBE/unix-shell/unix_tests
+
+2. rodar o comando ls -l e ver quais são as permissões dos arquivos;
+
+    ls -l
+
+	total 24
+	-rw-rw-r-- 1 michel michel 2240 jun  1 18:24 bunch_of_things_Ordem.txt
+	-rw-rw-r-- 1 michel michel 2239 jun  1 18:27 bunch_of_things.txt
+	-rw-rw-r-- 1 michel michel  397 jun  1 16:15 phrases2.txt
+	-rw-rw-r-- 1 michel michel 2444 jun  1 18:44 respostas.txt
+	-rw-rw-r-- 1 michel michel   49 mai 29 14:59 skills2.txt
+	-rw-rw-r-- 1 michel michel   19 jun  1 15:55 top_skills.txt
+
+
+3. Mudar permissão de bunch_of_things.txt para todos poderem ler e escrever, e verificar se deu tudo certo;
+	Resultado esperado: -rw-rw-rw- 1 ana ana 1860 ago 13 11:39 	bunch_of_things.txt
+	
+	chmod 666 bunch_of_things.txt
+
+4. Tirar a permissão de escrita do arquivo bunch_of_things.txt para todos os usuários, verificar se deu tudo certo;
+	Resultado esperado: -r--r--r-- 1 ana ana 1860 ago 13 11:39 bunch_of_things.txt
+	
+	chmod 444 bunch_of_things.txt
+
+5. Volte à permissão do arquivo bunch_of_things.txt para a listada inicialmente utilizando o comando chmod 644 bunch_of_things.txt.
+	Resultado esperado: -rw-r--r-- 1 ana ana 1860 ago 13 11:39 bunch_of_things.txt
+	
+	chmod 644 bunch_of_things.txt

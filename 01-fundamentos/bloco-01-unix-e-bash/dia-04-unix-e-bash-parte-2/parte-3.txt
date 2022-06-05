@@ -1,1 +1,82 @@
 PARTE III - PROCESSOS E JOBS
+
+1. listar todos os processos;
+
+	ps
+
+2. usar o comando sleep 30 & ;
+	
+	sleep 30 &
+	
+3. usar a listagem de processos para encontrar o PID do processo que está executando o comando sleep 30 e terminar a sua execução;
+
+	ps
+	
+	  PID TTY          TIME CMD
+	51403 pts/0    00:00:00 zsh
+	52182 pts/0    00:00:00 sleep
+	52194 pts/0    00:00:00 ps
+	
+	kill 52182
+	[1]  + 52182 terminated  sleep 30 
+  
+4. executar novamente o comando sleep 30, mas agora sem o &. Fazer com que ele continue executando em background;
+	
+	sleep 30
+	^z
+	
+	[1]  + 52538 suspended  sleep 30
+	
+	bg
+	
+	[1]  + 52538 continued  sleep 30
+
+
+5. criar um processo em background que rode o comando sleep por 300 segundos.
+
+	sleep 300 &
+
+6. criar mais dois processos que rodem o comando sleep por 200 e 100 segundos, respectivamente.
+	Devem ser criados em foreground e suspensos após começarem a executar.
+
+	sleep 200
+	^z
+	sleep 100
+	^z
+
+7. Verificar que apenas o processo sleep 300 está em execução com o comando jobs. Suspender a execução desse processo.
+	Você vai precisar trazer o processo para foreground e suspendê-lo, ou enviar um sinal.
+	
+	jobs
+		
+	[1]    running    sleep 300
+	[2]  - suspended  sleep 200
+	[3]  + suspended  sleep 100
+	
+	fg %1
+	
+	[1]    53406 running    sleep 300
+	
+	^z
+	
+	[1]  + 53406 suspended  sleep 300
+	
+8. Retome a execução do processo sleep 100 em background com o comando bg.
+	
+	bg %3
+	
+	[3]    53438 continued  sleep 100
+
+9. Termine a execução de todos os processos sleep (mate os processos).
+	
+	kill %1
+	
+	[1]  + 53406 terminated  sleep 300
+	
+	kill %2
+	
+	[2]  + 53425 terminated  sleep 200
+	
+	kill 53438 
+	
+	[3]    53569 terminated  sleep 100

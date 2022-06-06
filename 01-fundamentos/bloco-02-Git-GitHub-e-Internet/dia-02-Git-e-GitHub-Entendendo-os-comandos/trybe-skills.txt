@@ -2,3 +2,5 @@ Internet
 Unix
 Bash
 
+- HTML
+- JavaScript

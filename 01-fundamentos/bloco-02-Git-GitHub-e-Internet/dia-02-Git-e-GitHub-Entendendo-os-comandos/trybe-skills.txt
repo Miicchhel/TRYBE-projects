@@ -3,4 +3,4 @@ Unix
 Bash
 
 - HTML
-- CSS
+- JavaScript

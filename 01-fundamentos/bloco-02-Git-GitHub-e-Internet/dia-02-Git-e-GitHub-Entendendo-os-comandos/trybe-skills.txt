@@ -1,6 +1,6 @@
-Internet
-Unix
-Bash
-
+- Internet
+- Unix
+- Bash
+- React
 - HTML
 - JavaScript

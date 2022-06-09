@@ -1,0 +1,36 @@
+body{
+    background-color: #e0f3f1;
+}
+
+div:hover{
+    border:3px solid rgb(49, 134, 0)
+}
+
+div:nth-child(3){
+    background-color: rgb(22, 140, 243);
+}
+
+div:nth-child(4){
+    background-color: orange;
+}
+
+div:nth-child(5){
+    background-color: purple;
+    padding: 15px;
+}
+
+div:nth-child(6){
+    background-color: rgb(70, 69, 69);
+}
+
+div:nth-child(7){
+    background-color: rgb(248, 233, 214);
+}
+
+h3:nth-of-type(2n+1){
+    color: rgb(255, 0, 43);
+}
+
+div:nth-of-type(2n+1){
+    font-style: italic;
+}

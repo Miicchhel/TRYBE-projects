@@ -1,5 +1,5 @@
 let n = 50
-maior = 0
+let maior = 0
 
 for (let i = 2; i <= n; i++) {
   let cont = 0;

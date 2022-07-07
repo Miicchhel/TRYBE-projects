@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>TrybeTrip form</title>
+</head>
+<body>
+  <header>
+    <h1>TrybeTrip</h1>
+  </header>
+  <main>
+    <h2>Formulário obrigatório</h2>
+    <form action="" method="GET">
+      <!-- <fieldset> -->
+        <!-- <legend>Formulário obrigatório</legend> -->
+        <section id="form">
+          <section id="form__section-name" class="section-margin">
+            <label for="">Nome:</label>
+            <input type="text" name="name" id="form__section-name__input" required autofocus>
+          </section>
+          
+          <section id="form__section-email" class="section-margin">
+            <label for="">Email:</label>
+            <input type="email" name="email" id="form__section-email__input" required>
+          </section>
+          
+          <section  id="form__section-options">
+            <label for="form__section-options__option1">
+              <input type="radio" name="option" value="option1" id="form__section-options__option1" required>
+              Opção 1
+            </label>
+            <label for="form__section-options__option2">
+              <input type="radio" name="option" value="option2" id="form__section-options__option2">
+              Opção 2
+            </label>
+            <label for="form__section-options__option3">
+              <input type="radio" name="option" value="option3" id="form__section-options__option3">
+              Opção 3
+            </label>
+            <label for="form__section-options__option4">
+              <input type="radio" name="option" value="option4" id="form__section-options__option4">
+              Opção 4
+            </label>
+          </section>
+          
+          <section id="form__section-textarea" class="section-margin">
+            <p>Espaço para digitar a resposta</p>
+            <textarea name="textarea" id="form__section-textarea__text" cols="35" rows="10" required></textarea>
+          </section>
+      
+          <section id="form__section-date" class="section-margin">
+            <label for="form__section-date__date">
+              Data:
+              <input type="date" name="date" id="form__section-date__date" required>
+            </label>
+          </section>
+      
+          <section id="form__section-checkbox" class="section-margin">
+            <label for="form__section-checkbox__input1" class="form__section-checkbox">
+              Concordo 1
+              <input type="checkbox" name="concordo1" id="form__section-checkbox__input1">
+            </label>
+            <label for="form__section-checkbox__input2" class="form__section-checkbox">
+              Concordo 2
+              <input type="checkbox" name="concordo2" id="form__section-checkbox__input2">
+            </label>
+          </section>
+        </section>
+      <!-- </fieldset> -->
+        <section id="button">
+          <button id="button__submit" class="button" type="submit">Enviar</button>
+          <button id="button__reset" class="button" type="reset">Apagar</button>
+        </section>
+    </form>
+  </main>
+</body>
+</html>

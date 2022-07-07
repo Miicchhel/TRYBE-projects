@@ -1,0 +1,46 @@
+main h2 {
+  margin-bottom: 3px;
+}
+
+#form {
+  width: 400px;
+  padding: 10px;
+  color:rgb(73, 73, 73);
+  border: 2px solid black;
+}
+
+.section-margin {
+  margin: 10px;
+}
+
+#form__section-options {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+#form__section-textarea p {
+  margin-bottom: 3px;
+}
+
+#form__section-date__date {
+  color:rgb(73, 73, 73);
+}
+
+.form__section-checkbox {
+  display: block;
+  font-size: 14px;
+}
+
+#button {
+  margin-top: 10px;
+}
+
+.button {
+  width: 100px;
+  padding: 5px;
+  margin-left: 5px;
+  color:rgb(73, 73, 73);
+  border: 2px solid gray;
+  border-radius: 5px;
+  background-color: white;
+}

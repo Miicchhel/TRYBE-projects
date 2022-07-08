@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <title>TrybeTrip form</title>
+</head>
+
+<body class="bg-dark">
+  <main class="container">
+    <header class="text-center bg-light rounded my-3 p-3">
+      <h1>TrybeTrip</h1>
+      <p class="fs-4">Formulário obrigatório</p>
+    </header>
+    <form action="" method="GET">
+      <!-- <fieldset> -->
+      <!-- <legend>Formulário obrigatório</legend> -->
+      <section id="form" class="bg-light p-5 rounded">
+        <section id="form__section-name" class="my-1">
+          <label for="" class="form-label">Nome:</label>
+          <input type="text" name="name" id="form__section-name__input" class="form-control" required autofocus>
+        </section>
+
+        <section id="form__section-email" class="my-1">
+          <label for="" class="form-label">Email:</label>
+          <input type="email" name="email" id="form__section-email__input" class="form-control" required>
+        </section>
+
+        <section id="form__section-options" class="my-3">
+          <label for="form__section-options__option1" class="me-4">
+            <input type="radio" name="option" value="option1" id="form__section-options__option1"
+              class="form-check-input" required>
+            Brasil
+          </label>
+          <label for="form__section-options__option2" class="me-4">
+            <input type="radio" name="option" value="option2" id="form__section-options__option2"
+              class="form-check-input">
+            Japão
+          </label>
+          <label for="form__section-options__option3" class="me-4">
+            <input type="radio" name="option" value="option3" id="form__section-options__option3"
+              class="form-check-input">
+            EUA
+          </label>
+          <label for="form__section-options__option4">
+            <input type="radio" name="option" value="option4" id="form__section-options__option4"
+              class="form-check-input">
+            Italia
+          </label>
+        </section>
+
+        <section id="form__section-textarea" class="my-3">
+          <p class="mb-1 fs-6">Por que você deveria ganhar?</p>
+          <textarea name="textarea" placeholder="Espaço para digitar a resposta" id="form__section-textarea__text" class="form-control" cols="35" rows="10"
+            required></textarea>
+        </section>
+
+        <section id="form__section-date" class="my-3">
+          <label for="form__section-date__date">
+            Data:
+            <input type="date" name="date" id="form__section-date__date" required>
+          </label>
+        </section>
+
+        <section id="form__section-checkbox" class="d-flex flex-column">
+          <label for="form__section-checkbox__input1" class="form__section-checkbox">
+            Concordo 1
+            <input type="checkbox" name="concordo1" id="form__section-checkbox__input1" class="form-check-input mb-2">
+          </label>
+          <label for="form__section-checkbox__input2" class="form__section-checkbox">
+            Concordo 2
+            <input type="checkbox" name="concordo2" id="form__section-checkbox__input2" class="form-check-input">
+          </label>
+        </section>
+      </section>
+      <!-- </fieldset> -->
+      <section id="button" class="bg-dark my-2 p-2">
+        <button id="button__submit" class="btn btn-light me-2" type="submit">Enviar</button>
+        <button id="button__reset" class="btn btn-secondary me-2" type="reset">Apagar</button>
+        <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">Informações</button>
+      </section>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">TrybeTrip</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>É uma <mark> viagem <strong>totalmente paga</strong> pela equipe da Trybe</mark> para um dos locais escolhidos por voce. Isso inclui passeios, hospedagem e comida a vontade.</p> 
+              <p>Gosto? Então não perca essa chance e inscreva-se já!</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </main>
+</body>
+
+</html>

@@ -41,6 +41,29 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 - [x] 5: Fundamentos - JavaScript - Projetos
 - [x] 5: Projeto - Arte com Pixels
 - [x] 6: (Bônus) Projeto - Lista de tarefas
-- [x] 7.1: (Bônus) Projeto - Meme Generator
-- [x] 7.2: (Bônus) Projeto - Adivinhe a Cor
-- [x] 7.3: (Bônus) Projeto - Carta Misteriosa
+- [ ] 7.1: (Bônus) Projeto - Meme Generator
+- [ ] 7.2: (Bônus) Projeto - Adivinhe a Cor
+- [ ] 7.3: (Bônus) Projeto - Carta Misteriosa
+
+**Bloco 06:** _HTML e CSS: Forms, Flexbox e Responsivo_
+- [x] 1: HTML & CSS - Forms
+- [x] 2: Bibliotecas JavaScript e Frameworks CSS
+- [x] 3: Introdução - CSS Flexbox
+- [x] 3: CSS Flexbox - Parte 1
+- [x] 4: CSS Flexbox - Parte 2
+- [x] 5: CSS Responsivo - Mobile First
+- [x] 6: Projeto - Trybewarts
+
+**Bloco 07:** _Introdução à JavaScript ES6 e Testes Unitários_
+- [x] 1: JavaScript ES6 - let, const, arrow functions e template literals
+- [x] 2: JavaScript ES6 - Fluxo de exceção e Objetos
+- [ ] 3: Primeiros passos em Jest
+- [x] 4: Projeto - JavaScript Testes Unitários
+
+**Bloco 08:** _Higher Order Functions do JavaScript ES6_
+- [x] 1: JavaScript ES6 - Introdução a Higher Order Functions
+- [ ] 2: JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort
+- [ ] 3: JavaScript ES6 - Higher Order Functions - map e filter
+- [ ] 4: JavaScript ES6 - Higher Order Functions - reduce
+- [ ] 5: JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais
+- [ ] 6: Projeto - Zoo functions
